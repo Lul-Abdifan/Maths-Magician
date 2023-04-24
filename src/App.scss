@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 100vh;
+
+  .calculator {
+    width: 100%;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      td {
+        padding: 30px 40px;
+        font-weight: 800;
+        text-align: center;
+        border: 1px solid white;
+        cursor: pointer;
+        background-color: rgb(230, 224, 224);
+      }
+
+      .orange-tag {
+        background-color: orange !important;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .screen {
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 24px;
+    padding: 5px;
+    background-color: rgb(170, 162, 162) !important;
+  }
+}
