@@ -7,6 +7,7 @@ function Calculator() {
       <div className="calculator">
         <table>
           <tr>
+
             <td>AC</td>
             <td>+/-</td>
             <td>%</td>
