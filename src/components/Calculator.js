@@ -1,5 +1,5 @@
 import React from "react";
-import buttonsData from "./buttonsData";
+import buttonsData from "../buttonsData";
 
 function Calculator() {
   return (
