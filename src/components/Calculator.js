@@ -12,10 +12,13 @@ function Calculator() {
     const data = calculate(calcData, btn);
     setcalcData(data);
   };
+  const { total, next, operation } = calcData;
   return (
     <div className="container">
       <div className="screen">
-        {calcData.next || calcData.operation || calcData.total || '0'}
+        {total}
+        {operation}
+        {next }
       </div>
       <div className="calculator">
         <div className="table">
