@@ -14,17 +14,23 @@
   .calculator {
     width: 100%;
 
-    table {
+    .table {
       width: 100%;
       border-collapse: collapse;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
 
-      td {
+      button[type="button"] {
         padding: 30px 40px;
         font-weight: 800;
         text-align: center;
         border: 1px solid white;
         cursor: pointer;
         background-color: rgb(230, 224, 224);
+      }
+
+      .zero {
+        grid-column-end: span 2;
       }
 
       .orange-tag {
