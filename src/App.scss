@@ -18,11 +18,13 @@
       width: 100%;
       border-collapse: collapse;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr) !important;
 
       button[type="button"] {
         padding: 30px 40px;
         font-weight: 800;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr) !important;
         text-align: center;
         border: 1px solid white;
         cursor: pointer;

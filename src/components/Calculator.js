@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import buttonsData from './buttonsData';
+import Button from './Button';
+import '../App.scss';
 
 function Calculator() {
   const [calcData, setcalcData] = useState({
@@ -12,24 +13,16 @@ function Calculator() {
     const data = calculate(calcData, btn);
     setcalcData(data);
   };
+  const { total, next, operation } = calcData;
   return (
     <div className="container">
       <div className="screen">
-        {calcData.next || calcData.operation || calcData.total || '0'}
+        {total}
+        {operation}
+        {next}
       </div>
       <div className="calculator">
-        <div className="table">
-          {buttonsData.map((button) => (
-            <button
-              key={button.value}
-              type="button"
-              className={button.className}
-              onClick={() => handleClick(button.value)}
-            >
-              {button.label}
-            </button>
-          ))}
-        </div>
+        <Button handleClick={handleClick} />
       </div>
     </div>
   );
