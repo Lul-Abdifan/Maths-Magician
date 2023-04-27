@@ -19,7 +19,7 @@ function Calculator() {
       <div className="screen">
         {total}
         {operation}
-        {next}
+        {next }
       </div>
       <div className="calculator">
         <Button handleClick={handleClick} />
