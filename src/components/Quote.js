@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-const JOKE_URL = "https://api.api-ninjas.com/v1/jokes?limit=30";
-const API_KEY = "0bwHBZbvIbFq4b7VVYxi/g==jQQ3THRSKXzpCxih";
+const JOKE_URL = 'https://api.api-ninjas.com/v1/jokes?limit=30';
+const API_KEY = '0bwHBZbvIbFq4b7VVYxi/g==jQQ3THRSKXzpCxih';
 
 function Quote() {
-  const [randomJoke, setRandomJoke] = useState("");
+  const [randomJoke, setRandomJoke] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -13,7 +13,7 @@ function Quote() {
       try {
         const response = await fetch(JOKE_URL, {
           headers: {
-            "X-Api-Key": API_KEY,
+            'X-Api-Key': API_KEY,
           },
         });
         const data = await response.json();
