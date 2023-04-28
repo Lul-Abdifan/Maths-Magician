@@ -16,8 +16,8 @@ function Quote() {
           },
         });
         const data = await response.json();
-        const randomQuote = data[Math.floor(Math.random() * data.length)].joke;
-        setRandomJoke(randomQuote);
+        const randomData = data[Math.floor(Math.random() * data.length)].joke;
+        setRandomJoke(randomData);
         setLoading(false);
       } catch (error) {
         setError(true);
