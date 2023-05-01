@@ -15,14 +15,17 @@ function Calculator() {
   };
   const { total, next, operation } = calcData;
   return (
-    <div className="container">
-      <div className="screen">
-        {total}
-        {operation}
-        {next }
-      </div>
-      <div className="calculator">
-        <Button handleClick={handleClick} />
+    <div className="full-calculator">
+      <h2>Lets do some Mathematics</h2>
+      <div className="container">
+        <div className="screen">
+          {total}
+          {operation}
+          {next}
+        </div>
+        <div className="calculator">
+          <Button handleClick={handleClick} />
+        </div>
       </div>
     </div>
   );
