@@ -34,7 +34,7 @@ function Quote() {
   if (error) {
     return (
       <div>
-        <h1 className="notification">There is some error</h1>
+        <h2 className="notification">There is some error</h2>
       </div>
     );
   }
