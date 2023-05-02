@@ -51,15 +51,14 @@
     background-color: rgb(170, 162, 162) !important;
   }
 }
-.full-calculator{
+
+.full-calculator {
   display: flex;
-  flex: row;
   justify-content: center;
-  margin-left:150px;
-  margin-top:25px;
- 
-  
+  margin-left: 150px;
+  margin-top: 25px;
 }
+
 .notification,
 .quote {
   text-align: center;
